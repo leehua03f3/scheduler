@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduleapplication.LogInController">
+   <children>
+      <AnchorPane layoutX="74.0" layoutY="25.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane layoutX="82.0" layoutY="-16.0" prefHeight="400.0" prefWidth="544.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="200.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="50.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="136.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="266.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="266.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="usernameTextfield" prefHeight="25.0" prefWidth="111.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="usernameLabel" text="Username" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="passwordLabel" text="Password" />
+                     </children>
+                  </StackPane>
+                  <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="userLocation">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" spacing="20.0">
+                           <children>
+                              <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonOnClick" text="Login" />
+                              <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitBtnOnClick" text="Exit" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+                  <PasswordField fx:id="passwordTextfield" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+                     <children>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <Label text="Time Zone" />
+                              <Label fx:id="userTimeZone">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
